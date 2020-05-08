@@ -17,7 +17,7 @@ const PostsPage = () => {
       {/* map through data here to return a Post and pass data as props to Post */}
       {posts.map((post, index) => (
       <div key={index}>
-        <Post post={post} />
+        <Post post={post} setPosts={setPosts}/>
       </div>
       ))
       }
